@@ -36,9 +36,6 @@ public class KhachHang {
     @Column(name = "ten_khach_hang")
     private String tenKhachHang;
 
-    @Size(max = 100)
-    @Column(name = "ten_tai_khoan")
-    private String tenTaiKhoan;
 
     @Pattern(regexp = "^(0[3|5|7|8|9])[0-9]{8}$",
             message = "Số điện thoại không hợp lệ")
@@ -58,9 +55,6 @@ public class KhachHang {
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     @Column(name = "ngay_sinh")
     private LocalDate ngaySinh;
-
-    @Column(name = "mat_khau")
-    private String matKhau;
 
     @Column(name = "trang_thai")
     private Boolean trangThai = true;
